@@ -1,4 +1,4 @@
-// for UC4
+// for UC8
 
         const salary = document.querySelector('#salary');
         const output = document.querySelector('.salary-output');
