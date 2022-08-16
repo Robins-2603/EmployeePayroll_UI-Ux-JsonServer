@@ -72,14 +72,26 @@ window.addEventListener('DOMContentLoaded',(event) =>{
         let value=document.querySelector(id).value;
         return value;
     }
-    const getInputElementValue=(id)=>{
-        let value=document.getElementById(id).value;
-        return value;
+    const resetForm = () =>{
+        setValue("#name", "");
+        unsetSelectedValues("[name=profile]");
+        unsetSelectedValues("[name=gender]");
+        unsetSelectedValues("[name=department]");
+        setValue("#salary", "");
+        setValue("#notes", "");
+        setValue("#day", "1");
+        setValue("#month", "January");
+        setValue("#year", "2021");
     }
-    let popup=document.getElementById("popup");
-    function openPopup(){
-        popup.classList.add("open-popup");
+    
+    const unsetSelectedValues = (propertyValue) => {
+        let allItems = document.querySelectorAll(propertyValue);
+        allItems.forEach(item => {
+            item.checked = false;
+        });
     }
-    function closePopup(){
-        popup.classList.remove("open-popup");
-    }
+    
+    const setValue = (id, value) => {
+        const element = document.querySelector(id);
+        element.value = value;
+    } 
