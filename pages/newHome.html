@@ -25,39 +25,21 @@
         <div class="main-content">
             <!--UC2-->
             <div class="header-content">
-                <div class="emp-detail-text" padding-left: 5px;padding-top: 5px;padding-bottom: 5px;size: 10px;padding-right: 5px;>
-                    Employee Details<div class="emp-count"></div>
+                <div class="emp-detail-text" style="font-size: 20px;">
+                    Employee Details<div class="emp-count" style="border-radius: 10%;font-size: 20px;width: 30px;">10</div>
                 </div>
                 <a href="/pages/newPayrollForm.html" class="add-button">
-                    <img src="/assets/images/attach_file-24px.svg" alt="">Add Users</a>
+                    <img src="/assets/images/add-24px.svg" alt="">Add Users</a>
             </div><!--header content-->
         </div>
-        <table id="display" class="table" style="border-top-width: 2px;border-top-style: solid;border-left-width: 2px;border-left-style: solid;border-right-width: 2px;border-right-style: solid;border-bottom-width: 2px;
-        border-bottom-style: solid;">
+        <div class="table-main">
+        <table id="display" class="table" >
             <!--UC3-->
-            <tr>
-                <th>Profile</th>
-                <th>Name</th>
-                <th>Gender</th>
-                <th>Department</th>
-                <th>Salary</th>
-                <th>Start Date</th>
-                <th>Actions</th>
-            </tr>
-            <tr>
-            <td><img class="profile" alt="" src="/assets/profile-images/Ellipse -10.png"></td>
-            <td>Robins Chandna</td>
-            <td>Male</td>
-            <td><div class="dept-label">HR</div>
-            <div class="dept-label">Engineers</div></td>
-            <td>300000</td>
-            <td>1 Nov 2020</td>
-            <td>
-                <img id="1" onclick="remove(this)" alt="delete" src="/assets/images/delete-black-18dp.svg">
-                <img id="1" onclick="update(this)" alt="edit" src="/assets/images/create-black-18dp.svg">
-            </td>
-            </tr>
         </table>
-    
+        </div>
+        <script src="/js/newHome.js"></script>
+       <script src="/js/utility.js"></script>-->
+       <script src="/js/site_properties.js"></script>
+        <script src="/js/EmpPayrollData.js"></script>
 </body>
 </html>
